@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      
+      body{
+          background-color: hsl(204, 43%, 93%);
+          font-family: 'Karla', sans-serif;
+          font-weight: 200;
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+      }
+      #box{
+          align-self: center;
+          border-radius: 20px;
+          width: 600px;
+          overflow: hidden;
+          border-radius: 10px;
+          box-shadow: 0.5px 0.5px 20px 8px hsl(204, 43%, 85%);
+      }
+      #container{
+          background-color: white;
+          display:flex;
+          flex-direction: column;
+        
+      }
+      #sub-sontainer{
+          padding: 20px;
+      }
+      button{
+          border-radius: 6px;
+          border-style: none;
+          background-color: hsl(71, 73%, 54%);
+          color: white;
+          width: 200px;
+          height: 40px;
+          box-shadow: 0.5px 0.5px 20px 6px hsl(179, 62%, 35%);
+          
+      }
+      #sub-sontainer2{
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+      }
+      h2{
+          font-family: 'Karla', sans-serif;
+          font-weight: 700;
+          color: hsl(179, 62%, 38%);;
+      }
+      h3{
+          font-family: 'Karla', sans-serif;
+          font-weight: 400;
+      }
+      .first{
+          background-color: hsl(179, 62%, 39%);
+          padding: 20px;
+      }
+      .second{
+          background-color: hsl(179, 62%, 43%);
+          padding: 20px;
+      }
+  </style>
+</head>
+<body>
+<div id="box">
+<div id="container">
+    <div id="sub-sontainer">
+        <h2>Join our community</h2>
+
+        <h3 style="color: hsl(71, 73%, 54%);">30-day, hassle-free money back guarantee</h3>
+         <p style="color: grey">
+          Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+    </div>
+    <div id="sub-sontainer2">
+        <div class="sub-divs first">
+          <h3 style="color: white">Monthly Subscription</h3>
+           <div style="display: flex; flex-direction: row;">
+              <h1 style="color: white">&dollar;29</h1><p style="color: white; align-self: center; margin-left: 10px; opacity: 70%;">per month</p>
+          </div>
+          <p style="color: white">Full access for less than &dollar;1 a day</p>
+         <button>Sign Up</button>
+             
+        </div>
+        <div class="sub-divs second">
+         <h3 style="color: white">Why Us</h3>
+          <p style="color: white; font-weight: lighter">
+              Tutorials by industry experts
+              Peer &amp; expert code review
+              Coding exercises
+              Access to our GitHub repos
+              Community forum
+              Flashcard decks
+              New videos every week
+         </p>
+        </div>
+    </div>
+ </div> 
+ </div> 
+    
+
+</body>
+</html>
