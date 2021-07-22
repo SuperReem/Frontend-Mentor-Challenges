@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(0, 100%, 74%);
+      background-image: url(images/bg-intro-desktop.png);
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    #container{
+      display: flex;
+      flex-direction: row;
+      width: 1000px;
+      height: 500px;
+      margin: auto;
+      margin-top: 200px;
+      
+    }
+    #sub-cont1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sub-cont2{
+      display: flex;
+      flex-direction: column;
+    }
+    #box{
+      width: 400px;
+      height: 350px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 8px 6px -6px rgb(105, 105, 105);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(85, 85, 85);
+	    box-shadow: 0 8px 6px -6px rgb(82, 82, 82);
+      
+    }
+    #freetr{
+      background-color: hsl(248, 32%, 49%) ;
+      border-style: none;
+      border-radius: 5px;
+      color: white;
+      height: 50px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      -webkit-box-shadow: 0 8px 6px -6px rgb(105, 105, 105);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(85, 85, 85);
+	    box-shadow: 0 8px 6px -6px rgb(82, 82, 82);
+      font-weight: 700;
+    }
+    #submit{
+      background-color: hsl(154, 59%, 51%);
+      border-radius: 5px;
+      border-style: none;
+      color: white;
+      height: 50px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    #freetr:hover{
+      background-color: hsl(248, 32%, 43%) ;
+    }
+    #submit:hover{
+      background-color: hsl(154, 59%, 62%);
+    }
+    input{
+      border-radius: 8px;
+      border-style: none;
+      padding: 17px;
+      border: 1px solid rgb(211, 211, 211);
+      margin: 7px;
+    }
+    button >label {
+      font-weight: 100;
+      color: rgb(233, 233, 233);
+      font-size: 15px;
+    }
+
+    h1{
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    h1, p{
+      color : white;
+    }
+    p{
+      font-weight: 100;
+    }
+    #terms{
+      color:rgb(156, 156, 156);
+      font-size: 10px;
+      align-self: center;
+      justify-self: center ;
+     
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    #terms > label{
+      color: rgb(175, 43, 43);
+      font-size: 10px;
+    }
+    #terms > label:hover{
+      cursor: pointer;
+    }
+    #terms{
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 600px){
+      #container{
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        align-items: center;
+      }
+      #box{
+        width: 300px;
+      }
+      h1, p{
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="sub-cont1">
+      <h1>
+        Learn to code by watching others
+      </h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </div>
+    <div id="sub-cont2">
+      <button id="freetr">
+      Try it free 7 days <label>then $20/mo. thereafter</label>
+    </button>
+    <div id="box">
+      <input placeholder="First Name ">
+      <input placeholder="Last Name ">
+      <input placeholder="Email Address">
+      <input placeholder="Password">
+      
+    <button id="submit">
+      Claim your free trial 
+    </button>
+      <label id="terms">
+        By clicking the button, you are agreeing to our <label>Terms and Services</label>
+      </label>
+</div>
+</div>
+</div>
+  
+</body>
+</html>
